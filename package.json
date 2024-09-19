@@ -4,7 +4,8 @@
   "description": "Hoi Dan IT Fullstack backend zero",
   "main": "sever.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node sever.js"
   },
   "repository": {
     "type": "git",
