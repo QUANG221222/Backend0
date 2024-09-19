@@ -20,3 +20,7 @@
 ```
   Phật phù hộ, không bao giờ BUG
 ```
+
+_cài thư viện express_: npm i --save-exact@"version express"
+Không đẩy node\*modules lên git sử dụng gitignore
+_Running tasks_ : npm run <task-name>

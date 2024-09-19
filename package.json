@@ -1,0 +1,26 @@
+{
+  "name": "full_backend_zero",
+  "version": "1.0.0",
+  "description": "Hoi Dan IT Fullstack backend zero",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QUANG221222/Backend0.git"
+  },
+  "keywords": [
+    "nodejs",
+    "react"
+  ],
+  "author": "Quang IT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QUANG221222/Backend0/issues"
+  },
+  "homepage": "https://github.com/QUANG221222/Backend0#readme",
+  "dependencies": {
+    "express": "4.21.0"
+  }
+}
