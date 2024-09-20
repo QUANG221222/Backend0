@@ -1,9 +1,11 @@
 const express = require("express"); //common js
 const path = require("path");
+require("dotenv").config();
+console.log(">>> check env: ", process.env);
 // import express from "express"; error //es modules
 const app = express(); //app express
-const port = 8080; //port
-
+const port = process.env.PORT || 8888; //port => hardcore .uta .prod
+const hostname = process.env.HOST_NAME;
 //config template engine
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
@@ -19,6 +21,6 @@ app.get("/hoidanit", (req, res) => {
   res.render("sample.ejs");
 });
 
-app.listen(port, () => {
+app.listen(port, hostname, () => {
   console.log(`Example app listening on port ${port}`);
 });
