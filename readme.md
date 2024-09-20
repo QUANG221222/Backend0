@@ -45,3 +45,6 @@ _dotenv_ : npm install --save-exact dotenv@"Version"
 _Nodemon_ : một công cụ giúp phát triển các ứng dụng dựa trên Node.js bằng cách tự động khởi động lại ứng dụng node khi phát hiện có sự thay đổi trong tệp trong thư mục. (js, mjs, .coffee)
 npm i --save-dev nodemon@3.1.6
 _dev_: tương trưng cho development chỉ sử dụng khi chạy chương trình thử và xóa nếu hoàn thành website
+_Mô hình MVC_ : MVC Design Pattern
+_Design Pattern_ là cách 'giải pháp thiết kế' để xử lý bài toán một cách hiệu quả nhất.
+_MVC_ : MODEL - VIEW - CONTROLLER
