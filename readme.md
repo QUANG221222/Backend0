@@ -31,4 +31,16 @@ _method_: là HTTPrequestmethod, viếtthường(sẽ đề cập tới sau)
 _methodGET_: sẽ nói với Express cần trả ra nội dung cho client
 _Path_: đường link(route) trên server
 _Handler_: function để xử lý khi route được match
+
+<!-- Cài đặt cấu hình cho dự án -->
+
 _EJS_ : npm install --save-exact ejs@3.1.10
+
+<!-- Cài đặt môi trường cho dự án -->
+
+_dotenv_ : npm install --save-exact dotenv@"Version"
+
+<!--  -->
+
+_Nodemon_ : một công cụ giúp phát triển các ứng dụng dựa trên Node.js bằng cách tự động khởi động lại ứng dụng node khi phát hiện có sự thay đổi trong tệp trong thư mục. (js, mjs, .coffee)
+npm i --save-dev nodemon@3.1.6
