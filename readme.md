@@ -48,3 +48,5 @@ _dev_: tương trưng cho development chỉ sử dụng khi chạy chương trì
 _Mô hình MVC_ : MVC Design Pattern
 _Design Pattern_ là cách 'giải pháp thiết kế' để xử lý bài toán một cách hiệu quả nhất.
 _MVC_ : MODEL - VIEW - CONTROLLER
+
+_docker_ : docker compose -f mysql.yml -p nodejs-sql up -d
