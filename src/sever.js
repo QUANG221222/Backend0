@@ -1,28 +1,17 @@
-const express = require("express"); //common js
-const path = require("path");
 require("dotenv").config();
-console.log(">>> check env: ", process.env);
-// import express from "express"; error //es modules
+const express = require("express"); //common js
+const configViewEngine = require("./config/viewEngine");
+const webRouter = require("./routes/web");
+
 const app = express(); //app express
 const port = process.env.PORT || 8888; //port => hardcore .uta .prod
 const hostname = process.env.HOST_NAME;
+
 //config template engine
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "ejs");
-// config static files
-// app.use('/static',express.static(path.join(__dirname, 'public')))
-app.use(express.static(path.join(__dirname, "public")));
+configViewEngine(app);
 //Khai báo route
-app.get("/", (req, res) => {
-  res.send("Hello World! YenQuang  & Nodemon");
-});
-app.get("/abc", (req, res) => {
-  res.send("Check ABC");
-});
-app.get("/hoidanit", (req, res) => {
-  // res.send("<h1> Nguyen Nhat Quang </h1>");
-  res.render("sample.ejs");
-});
+app.use("/v1", webRouter);
+app.use("/v2", webRouter);
 
 app.listen(port, hostname, () => {
   console.log(`Example app listening on port ${port}`);
