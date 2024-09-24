@@ -7,6 +7,9 @@ const app = express(); //app express
 const port = process.env.PORT || 8888; //port => hardcore .uta .prod
 const hostname = process.env.HOST_NAME;
 const connection = require("./config/database");
+//config req.body
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 //config template engine
 configViewEngine(app);
 //Khai báo route
