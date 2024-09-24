@@ -34,3 +34,15 @@ img {
   background-color: #04aa6d;
   color: white;
 }
+.form-add-new {
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.input-group {
+  padding: 10px;
+}
+button {
+  margin: 10px;
+  cursor: pointer;
+}
