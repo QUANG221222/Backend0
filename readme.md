@@ -20,7 +20,8 @@
 ```
   Phật phù hộ, không bao giờ BUG
 ```
-
+_1. Câu lệnh npm init
+npm init : giúp tạo ra file package.json và các thông tin cần thiết: app name, version...
 _cài thư viện express_: npm i --save-exact@"version express"
 Không đẩy node\*modules lên git sử dụng gitignore
 _Running tasks_ : npm run <task-name>
