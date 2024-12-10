@@ -16,15 +16,15 @@
           <legend>Update a users</legend>
           <div class="input-group">
             <label for="">Email: </label>
-            <input type="text" id="emailId" name="email" />
+            <input type="text" value="<%= userEdit.email %>" name="email" />
           </div>
           <div class="input-group">
             <label for="">Name: </label>
-            <input type="text" name="name" />
+            <input type="text" name="name" value="<%= userEdit.name %>" />
           </div>
           <div class="input-group">
             <label for="">City: </label>
-            <input type="text" name="city" />
+            <input type="text" name="city" value="<%= userEdit.city %>" />
           </div>
           <div>
             <button>Save</button>
