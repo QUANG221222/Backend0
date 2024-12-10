@@ -11,7 +11,7 @@ const getABC = (req, res) => {
 const getHoiDanIT = (req, res) => {
   res.render("sample.ejs");
 };
-const getCreateUser = (req, res) => {
+const getCreatePage = (req, res) => {
   res.render("create.ejs");
 };
 const postCreateUser = async (req, res) => {
@@ -40,10 +40,14 @@ const postCreateUser = async (req, res) => {
   res.send("Created user succeed");
 };
 
+const getUpdatePage = (req, res) => {
+  res.render("edit.ejs");
+};
 module.exports = {
   getHomepage,
   getABC,
   getHoiDanIT,
-  getCreateUser,
+  getCreatePage,
   postCreateUser,
+  getUpdatePage,
 };
