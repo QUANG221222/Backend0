@@ -41,6 +41,8 @@ const postCreateUser = async (req, res) => {
 };
 
 const getUpdatePage = (req, res) => {
+  const userId = req.params.id;
+  console.log(">>> req.params", req.params);
   res.render("edit.ejs");
 };
 module.exports = {
